@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="playGround">
+        <h1> TIC TAC TOE</h1>
+        <div class="board">
+            <div id="cell" class="left-top"><span>1</span></div>
+            <div id="cell" class="middle"><span>2</span></div>
+            <div id="cell" class="right-top"><span>3</span></div>
+            <div id="cell" class="middle"><span>4</span></div>
+            <div id="cell" class="middle"><span>5</span></div>
+            <div id="cell" class="middle"><span>6</span></div>
+            <div id="cell" class="left-bottom"><span>7</span></div>
+            <div id="cell" class="middle"><span>8</span></div>
+            <div id="cell" class="righ-bottom"><span>9</span></div>
+        </div>
+        <button class="reset">RESET</button>
+    </div>
+
+    <dialog class="resultWindow" id="userWinDialog">
+        <p> CONGRATULATIONS, YOU'RE THE WINNER!</p>
+        <button class="reset">Start again</button>
+    </dialog>
+    <dialog class="resultWindow" id="botWinDialog">
+        <p>COMPUTER JUST BEAT YOUR ASS</p>
+        <button class="reset">Start Again</button>
+    </dialog>
+    <dialog class="resultWindow" id="tieDialog">
+        <p>IT'S A TIE!</p>
+        <button class="reset">start again</button>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>

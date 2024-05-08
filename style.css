@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+/*Main part with header, game board and reset button */
+
+.playGround {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.playGround h1 {
+    color: #70a1d8;
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 35px;
+    margin-right: 10px;
+    text-shadow: #123666;
+}
+
+.board {
+    width: 320px;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.board > div {
+    width: 100px;
+    height: 100px;
+    background-color: #70a1d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.board >div:hover {
+    background-color:#57bda7;
+}
+
+.board > div span {
+    visibility: hidden;
+}
+
+.left-top {
+    border-radius: 20px 0 0 0;
+}
+
+.right-top {
+    border-radius: 0 20px 0 0;
+}
+
+.left-bottom {
+    border-radius: 0 0 0 20px;
+}
+
+.right-bottom {
+    border-radius: 0 0 20px 0;
+}
+
+.board div p {
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.reset {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #5786bd;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.reset:hover {
+color: #123666;
+border: none;
+
+}
+
+.resultWindow {
+    /*visibility: visible */
+    /*position: absolute */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 180px;
+    width: 50%;
+    width: 350px;
+    height: 190px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.resultWindow p {
+ margin-top: 50px;
+ color: #70a1d8;
+ font-weight: 900;
+ font-size: 25px;
+}
+
+::backdrop {
+    background-color: rgb(3, 3, 3);
+    opacity: 0.7;
+}
